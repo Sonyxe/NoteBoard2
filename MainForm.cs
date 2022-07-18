@@ -30,5 +30,17 @@ namespace NoteBoard
             MyNotes form2 = new MyNotes();
             form2.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Login form3 = new Login();
+            form3.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Register form4 = new Register();
+            form4.ShowDialog();
+        }
     }
 }
