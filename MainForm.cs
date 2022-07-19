@@ -21,20 +21,19 @@ namespace NoteBoard
 
         private void button3_Click(object sender, EventArgs e)
         {
-            NewNoteForm form = new NewNoteForm();
-            form.ShowDialog();
+           
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            MyNotes form2 = new MyNotes();
-            form2.ShowDialog();
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Login form3 = new Login();
             form3.ShowDialog();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)

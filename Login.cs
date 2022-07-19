@@ -38,8 +38,9 @@ namespace NoteBoard
                     username = txtUserName.Text;
                     password=txtPassword.Text;
 
-                    NewNoteForm form1 = new NewNoteForm();
+                    MainForm2 form1 = new MainForm2();
                     form1.Show();
+                    this.Hide();
                     
 
                 }

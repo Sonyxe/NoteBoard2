@@ -46,8 +46,8 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(25, 17);
             this.panel1.Name = "panel1";
@@ -71,7 +71,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button4.Location = new System.Drawing.Point(69, 432);
+            this.button4.Location = new System.Drawing.Point(69, 424);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(193, 58);
             this.button4.TabIndex = 3;
@@ -85,7 +85,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button3.Location = new System.Drawing.Point(69, 327);
+            this.button3.Location = new System.Drawing.Point(69, 322);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(193, 58);
             this.button3.TabIndex = 2;
@@ -133,7 +133,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::NoteBoard.Properties.Resources.note;
-            this.pictureBox1.Location = new System.Drawing.Point(15, 44);
+            this.pictureBox1.Location = new System.Drawing.Point(21, 54);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(644, 444);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
