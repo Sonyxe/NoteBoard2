@@ -67,7 +67,24 @@ namespace NoteBoard
 
         private void button4_Click(object sender, EventArgs e)
         {
+            
+            SqlCommand cmd = new SqlCommand("DELETE FROM NoteBoard WHERE Title=@title", conn);
 
+            cmd.Parameters.AddWithValue("@Category", txtCategory.Text);
+            cmd.Parameters.AddWithValue("@Title", txtTitle.Text);
+            
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Delete!");
+        }
+
+        private void dataGv_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
+        {
+
+            txtCategory.Text = dataGv.CurrentRow.Cells[1].Value.ToString();
+            txtTitle.Text = dataGv.CurrentRow.Cells[2].Value.ToString();
+            
         }
     }
 }

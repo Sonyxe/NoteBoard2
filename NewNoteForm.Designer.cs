@@ -232,9 +232,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::NoteBoard.Properties.Resources.note1;
-            this.pictureBox1.Location = new System.Drawing.Point(44, 33);
+            this.pictureBox1.Location = new System.Drawing.Point(84, 33);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(264, 163);
+            this.pictureBox1.Size = new System.Drawing.Size(191, 122);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
