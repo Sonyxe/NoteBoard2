@@ -29,7 +29,7 @@ namespace NoteBoard
             set { note = value; }
         }
 
-       
+      
     }
  }
     
