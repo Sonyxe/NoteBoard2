@@ -62,7 +62,17 @@ namespace NoteBoard
 
         private void button3_Click(object sender, EventArgs e)
         {
+            SqlCommand cmd = new SqlCommand("UPDATE NoteBoard SET Category=@category, Title=@title, Note=@note WHERE Category=@category", conn);
+                 
 
+            cmd.Parameters.AddWithValue("@Category", txtCategory.Text);
+            cmd.Parameters.AddWithValue("@Title", txtTitle.Text);
+            cmd.Parameters.AddWithValue("@Note", txtNote.Text);
+
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Edit!");
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -84,6 +94,7 @@ namespace NoteBoard
 
             txtCategory.Text = dataGv.CurrentRow.Cells[1].Value.ToString();
             txtTitle.Text = dataGv.CurrentRow.Cells[2].Value.ToString();
+            txtNote.Text = dataGv.CurrentRow.Cells[3].Value.ToString();
             
         }
     }

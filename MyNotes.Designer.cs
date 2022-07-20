@@ -41,6 +41,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.listMyNotes = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtNote = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -49,6 +51,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.txtNote);
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
@@ -63,12 +67,12 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Location = new System.Drawing.Point(25, 20);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(963, 598);
+            this.panel1.Size = new System.Drawing.Size(1034, 598);
             this.panel1.TabIndex = 0;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(810, 529);
+            this.button4.Location = new System.Drawing.Point(899, 385);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(106, 41);
             this.button4.TabIndex = 18;
@@ -78,7 +82,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(189, 529);
+            this.button3.Location = new System.Drawing.Point(899, 323);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(106, 41);
             this.button3.TabIndex = 17;
@@ -88,7 +92,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(38, 526);
+            this.button2.Location = new System.Drawing.Point(899, 448);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(106, 41);
             this.button2.TabIndex = 16;
@@ -98,9 +102,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(810, 79);
+            this.button1.Location = new System.Drawing.Point(919, 41);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 41);
+            this.button1.Size = new System.Drawing.Size(86, 36);
             this.button1.TabIndex = 15;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = true;
@@ -113,7 +117,7 @@
             this.dataGv.Name = "dataGv";
             this.dataGv.RowHeadersWidth = 62;
             this.dataGv.RowTemplate.Height = 28;
-            this.dataGv.Size = new System.Drawing.Size(878, 327);
+            this.dataGv.Size = new System.Drawing.Size(659, 327);
             this.dataGv.TabIndex = 14;
             this.dataGv.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGv_CellMouseEnter);
             // 
@@ -129,14 +133,14 @@
             // 
             // txtTitle
             // 
-            this.txtTitle.Location = new System.Drawing.Point(653, 533);
+            this.txtTitle.Location = new System.Drawing.Point(761, 96);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(125, 26);
             this.txtTitle.TabIndex = 12;
             // 
             // txtCategory
             // 
-            this.txtCategory.Location = new System.Drawing.Point(653, 86);
+            this.txtCategory.Location = new System.Drawing.Point(761, 46);
             this.txtCategory.Name = "txtCategory";
             this.txtCategory.Size = new System.Drawing.Size(125, 26);
             this.txtCategory.TabIndex = 11;
@@ -145,7 +149,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label2.Location = new System.Drawing.Point(596, 539);
+            this.label2.Location = new System.Drawing.Point(717, 102);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 20);
             this.label2.TabIndex = 10;
@@ -155,7 +159,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(561, 89);
+            this.label1.Location = new System.Drawing.Point(682, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 20);
             this.label1.TabIndex = 9;
@@ -181,11 +185,29 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "My Notes";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label3.Location = new System.Drawing.Point(717, 162);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(43, 20);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Note";
+            // 
+            // txtNote
+            // 
+            this.txtNote.Location = new System.Drawing.Point(761, 162);
+            this.txtNote.Name = "txtNote";
+            this.txtNote.Size = new System.Drawing.Size(244, 122);
+            this.txtNote.TabIndex = 20;
+            this.txtNote.Text = "";
+            // 
             // MyNotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1011, 643);
+            this.ClientSize = new System.Drawing.Size(1092, 643);
             this.Controls.Add(this.panel1);
             this.Name = "MyNotes";
             this.Text = "MyNotes";
@@ -213,5 +235,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RichTextBox txtNote;
     }
 }
